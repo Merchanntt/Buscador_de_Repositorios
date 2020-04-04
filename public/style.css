@@ -3,27 +3,35 @@
 }
 
 html, body {
-  margin-left: 0;
+  margin: 0 0
 }
 
 body {
   font: sans-serif;
   display: flex;
   flex-direction: column;
-  background: #e2e2e2;
+  background-image: url(https://cdn.dribbble.com/users/33046/screenshots/2902861/attachments/605662/icon-pattern-gray.png);
+  background-size: 1000px;
+  min-height: 100vh;
 }
 
-form{
-  margin-left: 20px;
-  padding: 20px;
-  margin-bottom: 10px;
+form {
+  margin: 0 0 10 0;
+  width: 100%;
+  height: 150px;
+  min-height: 150px;
+  background: #211C24; 
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
+
 
 input {
   height: 40px;
    width: 400px;
    border-radius: 6;
-   border: 2px #7b1be9 solid;
+   border: 2px #7B38A9 solid;
    padding: 18px 18px;
 }
 
@@ -33,7 +41,7 @@ input::placeholder{
 }
 
 button{
-  background: #7b1be9;
+  background: #7B38A9;
   color: #fff;
   font-weight: bold;
    border: none;
@@ -45,31 +53,44 @@ button{
 }
 
 button:hover{
-  background: #4f1196;
+  filter: brightness(80%);
 }
 
 ul {
   list-style: none;
+  align-items: center;
 }
 
 li {
   align-items: center;
   justify-content: center;
   height: 250px;
-  width: 90%;
+  width: 80%;
   clear: both;
-  padding: 40px 40px;
+  padding: 50px 50px;
   background: #fff;
-  margin-top: 10px;
+  margin: 10px auto;
   text-justify: center;
+  line-height: 38px;
+  border: 4px #cccccc solid;
+  border-radius: 4px;
+}
+
+body form img{
+  height: 90px;
+  width: 90px;
+  filter: brightness(140%);
+  border: none;
+  justify-content: center;
 }
 
 img {
   float: left;
-  height: 150px;
-  width: 150px;
+  height: 160px;
+  width: 160px;
   border-radius: 50%;
   margin-right: 40px;
+  border: 8px #7B38A9 solid;
 }
 
 strong {
@@ -85,11 +106,25 @@ p {
 
 a {
   font-size: 18px;
-  color: #7b1be9;
+  color: #7B38A9;
   font-weight: bold;
   text-decoration: none;
   cursor: pointer;
 }
 a:hover{
-  color: #4f1196;
+  filter: brightness(80%);
 }
+
+span {
+  font-size: 18px;
+  color: #7B38A9;
+  font-weight: bold;
+  margin-left: 10px;
+}
+
+  footer {
+    width: 100%;
+    height: 30px;
+    background: #211C24;
+    margin-top: auto; 
+  }
