@@ -3,7 +3,8 @@
 }
 
 html, body {
-  margin: 0 0
+  margin: 0 0;
+  max-width: 100vw;
 }
 
 body {
@@ -25,7 +26,6 @@ form {
   align-items: center;
   justify-content: center;
 }
-
 
 input {
   height: 40px;
@@ -64,7 +64,7 @@ ul {
 li {
   align-items: center;
   justify-content: center;
-  height: 250px;
+  min-height: 250px;
   width: 80%;
   clear: both;
   padding: 50px 50px;
@@ -81,7 +81,6 @@ body form img{
   width: 90px;
   filter: brightness(140%);
   border: none;
-  justify-content: center;
 }
 
 img {
@@ -115,11 +114,12 @@ a:hover{
   filter: brightness(80%);
 }
 
+
 span {
-  font-size: 18px;
+  font-size: 25px;
   color: #7B38A9;
   font-weight: bold;
-  margin-left: 10px;
+  margin: auto;
 }
 
   footer {

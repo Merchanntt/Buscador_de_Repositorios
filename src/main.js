@@ -7,6 +7,8 @@ class app {
     this.formEl = document.getElementById("repo-form")
     this.inputEl = document.querySelector("input[name=repository]")
     this.listEl = document.getElementById("repo-list")
+    this.loadEl = document.getElementById("Load")
+
 
     this.registerRepository()
   }
@@ -21,7 +23,7 @@ class app {
       loadingEl.appendChild(document.createTextNode('Procurando...'))
       loadingEl.setAttribute('id', 'loading')
       
-      this.formEl.appendChild(loadingEl)
+      this.loadEl.appendChild(loadingEl)
     }else{
       document.getElementById('loading').remove()
     }
